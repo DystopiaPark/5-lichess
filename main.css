@@ -67,7 +67,6 @@ main {
     "c b b d";
   background-color: rgb(43, 41, 41);
   height: 630px;
-  border: 1px solid white;
 }
 .a {
   grid-area: a;
@@ -78,6 +77,10 @@ main {
   grid-area: b;
   border: 1px dotted gray;
   background-color: rgb(50, 48, 48);
+}
+#bb {
+  width: 100%;
+  height: 100%;
 }
 .c {
   grid-area: c;
@@ -99,3 +102,9 @@ section {
   width: 12.5%;
   height: 12.5%;
 }
+
+/* #b span::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+} */
