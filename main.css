@@ -66,26 +66,36 @@ main {
     "c b b d"
     "c b b d";
   background-color: rgb(43, 41, 41);
-  height: calc(100vh - 15rem);
+  height: 630px;
   border: 1px solid white;
 }
 .a {
   grid-area: a;
   border: 1px dotted gray;
+  background-color: rgb(50, 48, 48);
 }
-.b {
+#b {
   grid-area: b;
   border: 1px dotted gray;
+  background-color: rgb(50, 48, 48);
 }
 .c {
   grid-area: c;
   border: 1px dotted gray;
+  background-color: rgb(50, 48, 48);
 }
 .d {
   grid-area: d;
   border: 1px dotted gray;
+  background-color: rgb(50, 48, 48);
 }
 section {
   height: 11.5rem;
-  background-color: rgb(43, 41, 41);
+  background-color: rgb(41, 43, 42);
+}
+#b span {
+  display: inline-block;
+  border: 1px solid gray;
+  width: 12.5%;
+  height: 12.5%;
 }
