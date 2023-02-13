@@ -1,4 +1,5 @@
 let board = document.getElementById("bb");
+
 for (i = 1; i <= 64; i++) {
   if (i < 9 || (i > 16 && i < 25) || (i > 32 && i < 41) || (i > 48 && i < 57)) {
     if (i % 2 != 0) {
@@ -8,7 +9,7 @@ for (i = 1; i <= 64; i++) {
       board.append(white);
     } else {
       let black = document.createElement("span");
-      black.style.backgroundColor = "dodgerblue";
+      black.style.backgroundColor = "lightgray";
       black.textContent = "\u00A0";
       board.append(black);
       if (i % 8 == 0) {
@@ -26,7 +27,7 @@ for (i = 1; i <= 64; i++) {
       }
     } else {
       let black = document.createElement("span");
-      black.style.backgroundColor = "dodgerblue";
+      black.style.backgroundColor = "lightgray";
       black.textContent = "\u00A0";
       board.append(black);
       if (i % 8 == 0) {
@@ -35,3 +36,8 @@ for (i = 1; i <= 64; i++) {
     }
   }
 }
+
+// board.addEventListener("resize", (e) => {
+//   board.style.height = e.style.width;
+// });
+// console.log(board.offsetWidth);
